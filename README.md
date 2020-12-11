@@ -1,5 +1,7 @@
 # Build Tool Perfromance Analyzer
 
+This repository contains the culmination of work by Dylan Bray and Alex Issa for EE382V: Software Evolution at UT Austin during the Fall of 2020. Our semester report is included in this repository.
+
 ## Usage
 
 1. Clone this repository, leaving ```analyzer-script.ps1``` and ```logPID.py``` in the same directory.
@@ -9,16 +11,16 @@
 
 ```.\analyzer-script.ps1 "<tool-name>" "<path/to/codebase>" "<name-of-analysis-scenario>" "<num-iterations>" "<BAZEL-ONLY:target-name>" <flags (not required)>```
   
-  ### Flags
+### Flags
 * ```-clean``` runs the appropriate build tool clean command, forcing the tool to build from scratch
 * ```-cold``` shuts down the build tool prior to running the test, forcing a cold start
 * ```-test``` runs tests with the build (default skips tests)
   
-  ### Dependency Graph Plugins
-  
-  Maven and Gradle require external plugins to generate dependency graphs. 
-  
-  #### Maven
+### Dependency Graph Plugins
+
+Maven and Gradle require external plugins to generate dependency graphs. 
+
+#### Maven
   
 Add
 ```
@@ -48,3 +50,7 @@ plugins {
 to each ```build.gradle```,
 then run ```gradle generateDependencyGraph```,
 then go to ```/build/reports/dependency-graph``` to find the generated graph.
+
+## Results
+
+In the ```/results``` folder, you will find our results from running many types of tests.
