@@ -1,6 +1,6 @@
 # Build Tool Perfromance Analyzer
 
-This repository contains the culmination of work by Dylan Bray and Alex Issa for EE382V: Software Evolution at UT Austin during the Fall of 2020. Our semester report is included in this repository.
+This repository contains the culmination of work by Dylan Bray and Alex Issa for EE382V: Software Evolution at UT Austin during the Fall of 2020. Our semester report and associated informal notes and work can be found here: https://github.com/alexissa32/SoftwareEvProject
 
 ## Usage
 
