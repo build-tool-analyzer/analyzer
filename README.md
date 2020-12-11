@@ -34,8 +34,8 @@ Add
   </configuration>
 </plugin>
 ```
-to ```pom.xml```
-then run ```mvn depgraph:graph```
+to ```pom.xml```,
+then run ```mvn depgraph:graph```,
 then go to ```/target``` to find the generated graph.
 
 #### Gradle
@@ -46,6 +46,6 @@ plugins {
     id "com.vanniktech.dependency.graph.generator" version "0.5.0"
 }
 ```
-to each ```build.gradle```
-then run ```gradle generateDependencyGraph```
+to each ```build.gradle```,
+then run ```gradle generateDependencyGraph```,
 then go to ```/build/reports/dependency-graph``` to find the generated graph.
