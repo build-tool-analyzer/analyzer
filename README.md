@@ -5,14 +5,14 @@
 1. Clone this repository, leaving ```analyzer-script.ps1``` and ```logPID.py``` in the same directory.
 1. Clone one of the example codebases we have set up in https://github.com/build-tool-analyzer, then check out the branch ```maven-build```; ```gradle-build```; or ```bazel-build```, or clone a codebase and set it up for the tool you wish to analyze.
 1. Run the PowerShell script as follows and find the performance log and a graph of the results as well as dependencies in ```/results```.
-  1. By default, the script runs ```mvn package```, ```gradle build```, or ```bazel build //:target```.
+    1. By default, the script runs ```mvn package```, ```gradle build```, or ```bazel build //:target```.
 
 ```.\analyzer-script.ps1 "<tool-name>" "<path/to/codebase>" "<name-of-analysis-scenario>" "<num-iterations>" "<BAZEL-ONLY:target-name>" <flags (not required)>```
   
   ### Flags
-  ```-clean``` runs the appropriate build tool clean command, forcing the tool to build from scratch\
-  ```-cold``` shuts down the build tool prior to running the test, forcing a cold start\
-  ```-test``` runs tests with the build (default skips tests)
+* ```-clean``` runs the appropriate build tool clean command, forcing the tool to build from scratch
+* ```-cold``` shuts down the build tool prior to running the test, forcing a cold start
+* ```-test``` runs tests with the build (default skips tests)
   
   ### Dependency Graph Plugins
   
